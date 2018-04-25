@@ -3,7 +3,7 @@ WIP WIP WIP WIP WIP WIP
 
 # tweetview
 
-Tools to Organize and Visualize Tweets
+Tools to Organize and Visualize Tweets Including Tweet Threads
 
 ## Description
 

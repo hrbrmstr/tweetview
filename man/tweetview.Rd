@@ -4,9 +4,9 @@
 \name{tweetview}
 \alias{tweetview}
 \alias{tweetview-package}
-\title{Tools to Organize and Visualize Tweets}
+\title{Tools to Organize and Visualize Tweets Including Tweet Threads}
 \description{
-Tools to Organize and Visualize Tweets
+Tools to Organize and Visualize Tweets Including Tweet Threads
 }
 \author{
 Bob Rudis (bob@rud.is)

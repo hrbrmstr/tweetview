@@ -1,6 +1,6 @@
 Package: tweetview
 Type: Package
-Title: Tools to Organize and Visualize Tweets
+Title: Tools to Organize and Visualize Tweets Including Tweet Threads
 Version: 0.1.0
 Date: 2018-01-13
 Authors@R: c(
@@ -9,7 +9,7 @@ Authors@R: c(
   )
 Encoding: UTF-8
 Maintainer: Bob Rudis <bob@rud.is>
-Description: A series of tools to organize and visualize tweets.
+Description: A series of tools to organize and visualize tweets including tweet threads.
 URL: https://github.com/hrbrmstr/tweetview
 BugReports: https://github.com/hrbrmstr/tweetview/issues
 License: AGPL
@@ -17,7 +17,8 @@ Suggests:
     testthat,
     covr,
     knitr,
-    rmarkdown
+    rmarkdown,
+    tidyverse
 Depends:
     R (>= 3.2.0),
     rtweet
