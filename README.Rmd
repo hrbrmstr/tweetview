@@ -1,0 +1,60 @@
+---
+output: rmarkdown::github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+WIP WIP WIP WIP WIP WIP
+
+# tweetview
+
+Tools to Organize and Visualize Tweets
+
+## Description
+
+## What's Inside The Tin
+
+The following functions are implemented:
+
+- `as_tweet_thread`:	Turn a data frame of 'rtweet' tweets into a tweet thread
+- `get_thread`:	Retrieve an authors tweet thread/rant from a starting status id
+- `htmlify_tweet`:	Make a Tweet into an HTML object
+- `print.tweet_thread`:	Print method for a tweet thread
+- `style_tweet`:	Style a tweet with HTML
+
+## Installation
+
+```{r eval=FALSE}
+devtools::install_github("hrbrmstr/tweetview")
+```
+
+```{r message=FALSE, warning=FALSE, error=FALSE, include=FALSE}
+options(width=120)
+```
+
+## Usage
+
+```{r message=FALSE, warning=FALSE, error=FALSE}
+library(tweetview)
+library(tidyverse)
+
+# current verison
+packageVersion("tweetview")
+
+```
+
+```{r cache=TRUE}
+thrd <- get_thread("988895496381984770")
+
+thrd
+
+str(thrd, 1)
+
+glimpse(thrd$tweet_thread)
+```
+
+There's a vanilla HTML-ified version of that text in `$thread_html`. Run this to see it and you can add your own CSS styling. The vignette source has some example CSS.
+
+```{r eval=FALSE}
+htmltools::html_print(htmltools::HTML(thrd$thread_html))
+```
